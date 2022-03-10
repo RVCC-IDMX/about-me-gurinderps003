@@ -6,6 +6,9 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Grenze Gotisch";
+    text-align: center;
+}
+h1 {
     font-size: 50pt;
 }
 
@@ -27,5 +30,10 @@ header {
 
 #bio{
     text-align: center;
+}
+
+#hobbies ul li:nth-child(odd) {
+color: red;
+font-size: 15pt;
 }
 
