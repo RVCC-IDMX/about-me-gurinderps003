@@ -39,7 +39,8 @@ font-size: 15pt;
 
 /* Gallery Section */
 #gallery {
-    border: 5px solid red;
+    border: 5px solid #82BEFF;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -51,4 +52,31 @@ font-size: 15pt;
 }
 #gallery figcaption {
     color: black;
+}
+/* Literature Section */
+#lit {
+    border: 5px solid #82BEFF;
+    margin-bottom: 2rem;
+}
+#lit div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+#lit div p{
+    padding: 0.3rem 0;
+    clear: both;
+}
+/*Dropcaps Section */
+#lit div p::first-letter {
+    color:#3267A1;
+    float: left;
+    font-size: 3em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    padding:.15em;
+    line-height: .65;
+    border: 1px solid black;
+    border-top-left-radius: .3em;
+    margin-right:.25em;
 }
