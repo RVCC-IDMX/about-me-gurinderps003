@@ -12,6 +12,13 @@ h1 {
     font-size: 50pt;
 }
 
+marquee {
+    background-color: #3267A1;
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
 header {
     text-align: center;
 }
@@ -23,6 +30,9 @@ header {
     padding: 10px;
     color: #82BEFF;
 }
+#hero {
+    font-size: 2em;
+}
 /* Hero Section */
 #hero img{
     width:300px;
@@ -30,11 +40,21 @@ header {
 /* Bio Section */
 #bio{
     text-align: center;
+    font-size: larger;
 }
 /* Hobbies Section */
 #hobbies ul li:nth-child(odd) {
 color: red;
 font-size: 15pt;
+}
+#hobbies ul li:nth-child(even) {
+    color: #3267A1;
+    font-size: 15pt;
+    }
+#hobbies a {
+        color: #3267A1;
+        text-decoration: none;
+     
 }
 
 /* Gallery Section */
