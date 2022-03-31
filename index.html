@@ -88,6 +88,84 @@
         </div>
 
     </article>
+    <section id="video">
+    <h2> A Short Video:</h2>
+
+    <div id="myVideoWrapper">
+        <iframe id="myVideo" width="560" height="315" 
+        src="https://www.youtube.com/embed/5squqhUA3bY" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+  </section>
+  <style>
+        #myVideo {
+            width:100%;
+            display: block;
+            margin:auto;
+        }
+  </style>
+
+  <section id="contact">
+
+    <h2>Contact Us:</h2>
+
+    <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+        <fieldset>
+            <legend>Contact Form</legend>
+
+                <div id="formElements">
+
+                <!--Name -->
+              <label for="name"> Name (required)</label> 
+             <input type="text" id="name" name="name" placeholder="ex: John Smith" required>
+
+              <!--Email -->
+              <label for="email"> Email (required)</label> 
+             <input type="email" id="email" name="email" placeholder="ex: johnsmith1@gmail.com" required>
+
+             <!--Phone -->
+             <label for="phone"> Phone (optional)</label> 
+             <input type="tel" id="phone" name="phone" placeholder="ex: 1234567890" >
+
+             <!--Phone Type -->
+             <label for="phonetype"> Phone type (optional)</label> 
+             <select id="phonetype" name="phonetype"> 
+                 <option value="" selected> Select phone type</option>
+                 <option value="Mobile"> Mobile</option>
+                 <option value="Work" > Work</option>
+                 <option value="Home"> Home</option>
+             </select>
+
+             <!-- Message -->
+             <label for="message"> Message (optional)</label> 
+             <textarea id="message" name="message" rows="8" ></textarea>
+
+             <!-- Reply -->
+             <fieldset>
+                 <legend> Would you like a reply?</legend>
+
+                <ul>
+                        <li>
+                            <input type="radio" id="message-yes" name="reply" value="Yes a reply please">
+                            <label for="message-yes">yes a reply would be nice</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="message-no" name="reply"  value="No reply please" checked>
+                            <label for="message-no">No, thanks</label>
+                        </li>
+                </ul>
+             </fieldset>
+
+             <!--Submit-->
+             <button type="submit" >Send</button>
+            </div>
+        </fieldset>
+
+    </form>
+  </section>
     </main>
     <footer>
         ©2020 - Gurinder Pal Singh

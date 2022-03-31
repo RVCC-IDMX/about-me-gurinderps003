@@ -11,6 +11,9 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 50pt;
 }
+h2 {
+    font-size: 30pt;
+}
 
 marquee {
     background-color: #3267A1;
@@ -145,4 +148,9 @@ font-size: 15pt;
     figure {
         display: block;
     }
+}
+
+/* Contact Form */
+#formElements {
+    display: grid; 
 }
