@@ -36,17 +36,17 @@ main {
 
 /* logo */
 
-.logo {
+.Logo {
     display: flex;
     align-items: center;
 }
 
-.logo img {
+.Logo img {
     height: 6vw;
     width: 6vw;
 }
 
-.logo h1 {
+.Logo h1 {
     font-size: 1.2em;
 }
 
@@ -69,14 +69,20 @@ main {
 
 .navbar-links a {
     color: whitesmoke;
-    background-attachment: #333;
+    background-color: #333;
     font-size: 1.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
-    
-}
+    }
+
+    .navbar-links a:hover, .navbar-links a:focus {
+       color: #333;
+       background-color: whitesmoke;
+        border-radius: 10px;
+        outline: none;
+    }
 
 
 
