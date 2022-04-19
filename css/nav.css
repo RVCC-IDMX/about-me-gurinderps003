@@ -94,10 +94,6 @@ such that no text wraps
 
 @media sceen (min-width: 60rem) {
 
-    .navbar-links {
-        display: flex;
-        justify-content: space-between;
- }
 
  .navbar {
      flex-direction: row;
