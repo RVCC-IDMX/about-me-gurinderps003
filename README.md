@@ -11,8 +11,11 @@
 ## Color Scheme
 ![Color Scheme](https://raw.githubusercontent.com/RVCC-IDMX/about-me-gurinderps003/f771e1e67c2bd5dc78107e5b70fd4226f758fa1a/img/color.adobe.com_create_color-wheel%20(1).png)
 
-## Usage
-```html
-<body></body>
+## Citation
 ```
+
+
+```
+## License
+[RVCC](https://choosealicense.com/licenses/mit/)
 
