@@ -17,5 +17,5 @@
 
 ```
 ## License
-[RVCC](https://choosealicense.com/licenses/mit/)
+[RVCC Student Code of Conduct](https://github.com/RVCC-IDMX/about-me-gurinderps003/blob/main/CODE_OF_CONDUCT.md)
 
