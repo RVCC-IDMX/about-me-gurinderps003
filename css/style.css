@@ -12,7 +12,7 @@ h1 {
     font-size: 50pt;
 }
 h2 {
-    font-size: 30pt;
+    font-size: 40pt;
 }
 
 marquee {
@@ -45,14 +45,21 @@ header {
     text-align: center;
     font-size: larger;
 }
+#bio p {
+    font-size: 2rem;
+}
 /* Hobbies Section */
 #hobbies ul li:nth-child(odd) {
 color: red;
-font-size: 15pt;
+font-size: 2rem;
+text-align: center;
+list-style-type: none;  
 }
 #hobbies ul li:nth-child(even) {
     color: #3267A1;
-    font-size: 15pt;
+    font-size: 2rem;
+    text-align: center;
+    list-style-type: none;  
     }
 #hobbies a {
         color: #3267A1;
@@ -71,7 +78,7 @@ font-size: 15pt;
 }
 
 #gallery figure {
-    text-align:center ;
+    text-align: center;
 }
 #gallery figcaption {
     color: black;
@@ -193,4 +200,11 @@ legend {
 #contact input, #contact textarea, #contact select, #contact button {
     padding: .5em;
     font-size: 1rem;
+}
+
+#footer a{
+font-size: 2rem;
+font-family: 'Times New Roman', Times, serif;
+color: #3267A1;
+text-decoration: none;
 }
