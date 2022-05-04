@@ -32,6 +32,38 @@ main {
     margin-bottom: 1rem;
     padding: 1rem;
 }
+.header a {
+    text-decoration: none;
+}
+.header li { 
+    list-style: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+
 
 
 /* logo */
@@ -54,12 +86,6 @@ main {
 /* navigation list */
 
 
-.navbar-links li {
-    list-style: none;
-    display: block;
-    padding: 0.5em 0;
-}
-
 
 
 /*  
@@ -67,23 +93,23 @@ main {
  and then on hover
 */
 
-.navbar-links a {
-    color: whitesmoke;
-    background-color: #333;
-    font-size: 2rem;
-    padding: 1rem 1.25rem;
-    letter-spacing: 2px;
-    text-decoration: none;
-    display: inline-block;
-    }
 
-    .navbar-links a:hover, .navbar-links a:focus {
-       color: #333;
-       background-color: whitesmoke;
-        border-radius: 10px;
-        outline: none;
+    .nav-link{
+        color: whitesmoke;
+        background-color: #333;
+        font-size: 2rem;
+        padding: 1rem 1.25rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        display: inline-block;
     }
-
+    
+    .nav-link:hover{
+        color: #333;
+        background-color: whitesmoke;
+         border-radius: 10px;
+         outline: none;
+    }
 
 
 /* 
@@ -108,4 +134,44 @@ such that no text wraps
      display: flex;
      justify-content: space-between;
  }
+}
+
+/* Mobile Device*/
+@media only screen and (max-width: 1200px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }

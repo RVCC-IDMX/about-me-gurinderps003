@@ -15,23 +15,35 @@
 </head>
 <body>
     <!--the body element contains all content shown to a vistor-->
-    <header>
-            <!-- the header shows logo and page title --> 
-            <nav class="navbar">
-                <div class="Logo">
-                    <img src="img/lobster.svg" alt="Blue Origami Logo">
-                    <h1> Web Dev I</h1> 
-                </div>
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="#bio">Bio</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#lit">Blog</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </div>
-            </nav>
-    </header>
+    <header class="header">
+         <!-- the header shows logo and page title --> 
+        <nav class="navbar">
+            <div class="Logo">
+                <img src="img/lobster.svg" alt="Blue Origami Logo">
+                <br>
+                <h1> Web Dev I</h1> 
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#bio" class="nav-link">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lit" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
     <main>
         <!--the main envelops important page content -->
         <section id="hero">
@@ -59,10 +71,10 @@
         <h2>Hobbies:</h2>
 
         <uL>
-            <li>I love Boxing </li>
-            <li>I also make video's on youtube <a href="https://www.youtube.com/c/lilfaug/">"Click Here"</a></li>
-            <li> Other than computer's i also enjoy my time with cars</li>
-            <li>In my free time, I love to play COD. Matter of fact i might be playing COD right now</li>
+            <li>I love Boxing. </li>
+            <li>I also make video's on  <a href="https://www.youtube.com/c/lilfaug/" style="color: red; font-size: 30px;">YouTube</a>.</li>
+            <li> Other than computer's i also enjoy my time with cars.</li>
+            <li>In my free time, I love to play COD. Matter of fact i might be playing COD right now.</li>
         </uL>
     </section>
     <section id="gallery">
@@ -85,17 +97,24 @@
 
     </section>
     <article id="lit">
-        <h1>An Expert from Dracula</h1>
+          <img src="/img/twitter.png" alt="Twitter Logo">
+          <h1>Why is Elon Musk buying Twitter?</h1>
+      
 
         <div>
-           <p>My Friend.--Welcome to the Carpathians. I am anxiously expecting you. Sleep well to-night. At three to-morrow the diligence will start for Bukovina; a place on it is kept for you. At the Borgo Pass my carriage will await you and will bring you to me. I trust that your journey from London has been a happy one, and that you will enjoy your stay in my beautiful land.</p>
+           <p>I have lived a full and, for the most part, good life without having to share a moment of that full, and for the most part, good life on Twitter or any other social media platform.</p>
 
-           <p>Your friend,</p>
+           <p>These days, I am a Twitter unicorn.</p>
             
-           <p>DRACULA." 4 May.--I found that my landlord had got a letter from the Count, directing him to secure the best place on the coach for me; but on making inquiries as to details he seemed somewhat reticent, and pretended that he could not understand my German. This could not be true, because up to then he had understood it perfectly; at least, he answered my questions exactly as if he did. He and his wife, the old lady who had received me, looked at each other in a frightened sort of way. He mumbled out that the money had been sent in a letter, and that was all he knew. When I asked him if he knew Count Dracula, and could tell me anything of his castle, both he and his wife crossed themselves, and, saying that they knew nothing at all, simply refused to speak further. It was so near the time of starting that I had no time to ask any one else, for it was all very mysterious and not by any means comforting.
-            Just before I was leaving, the old lady came up to my room and said in a very hysterical way</p>
+           <p>Still, about nine years ago, an editor in Ottawa I wrote for encouraged me to join Twitter because a few journalists – his friends – asked, on Twitter, why I was not on Twitter.</p>
             
-           <p>Must you go? Oh! young Herr, must you go?" She was in such an excited state that she seemed to have lost her grip of what German she knew, and mixed it all up with some other language which I did not know at all. I was just able to follow her by asking many questions. When I told her that I must go at once, and that I was engaged on important business, she asked again</p>
+           <p>He was eager to have me “push” my stuff on Twitter so I could generate “more traffic” and “hits” for my weekly column back then.</p>
+
+           <p>More “hits” meant “more traffic.” “More traffic” usually translated into more “followers” on Twitter. Attracting more “followers” was going to make him, me and my “followers” happy that I was on Twitter.</p>
+
+           <p>I did not need or want to find happiness on Twitter. The prospect of having “followers” was strange and off-putting. I didn’t want or need anyone to “follow” me online. Read me: yes, please. Follow me: no thanks.</p>
+
+           <a href="https://www.aljazeera.com/opinions/2022/4/28/why-is-elon-musk-buying-twitter" class="buttonn">See More...</a>
         </div>
 
     </article>
@@ -179,5 +198,24 @@
         <p><a href="https://www.instagram.com/lilfaug">Instagram</a></p>
         <p><a href="https://github.com/RVCC-IDMX/about-me-gurinderps003">Github REPO</a></p>
     </footer>
+    <script> 
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        
+        hamburger.addEventListener("click", mobileMenu);
+        
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+        </script>
 </body>
 </html>
